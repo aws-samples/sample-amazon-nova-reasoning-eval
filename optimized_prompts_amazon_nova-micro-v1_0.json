@@ -1,0 +1,135 @@
+{
+  "angry_customer": {
+    "name": "Angry Customer Complaint",
+    "prompt": "\"# Customer Support Response Task\\n\\n## Scenario\\nYou are a professional customer support representative for a technology company. You need to respond to an upset customer who has written the following message:\\n\\n\\\"I am absolutely furious! I ordered a laptop 3 weeks ago and it still hasn't arrived. When I called last week, your representative was rude and unhelpful. I've been a loyal customer for 5 years and this is how you treat me? I want my money back immediately and I'm considering switching to your competitor. This is unacceptable!\\\"\\n\\n## Instructions\\nCraft a professional, empathetic response that:\\n1. Acknowledges the customer's frustration and validates their feelings\\n2. Apologizes sincerely for the delayed delivery and poor customer service experience\\n3. Offers a clear solution to address their immediate concerns (refund request)\\n4. Demonstrates that you value their 5-year loyalty\\n5. Provides next steps or additional assistance options\\n6. Maintains a calm, respectful tone throughout\\n\\nYour response should be concise, solution-oriented, and focused on rebuilding trust with this valuable long-term customer.\\n\\nProvide your response immediately without any preamble.\"",
+    "key_issues": [
+      "Delayed delivery",
+      "Poor customer service experience",
+      "Customer loyalty concerns",
+      "Refund request"
+    ],
+    "required_solutions": [
+      "Apologize sincerely",
+      "Investigate delivery status",
+      "Offer compensation",
+      "Escalate if needed"
+    ],
+    "policies": [
+      "Always acknowledge customer emotions",
+      "Provide specific next steps",
+      "Offer multiple resolution options"
+    ],
+    "_optimization_metadata": {
+      "original_length": 463,
+      "optimized_length": 1199,
+      "target_model": "amazon.nova-micro-v1:0"
+    }
+  },
+  "technical_issue": {
+    "name": "Software Technical Problem",
+    "prompt": "\"# Technical Support Representative Role\\n\\nYou are an experienced technical support representative for a company with a mobile application. Your goal is to provide helpful, professional, and solution-oriented responses to customer issues.\\n\\n## Customer Report\\nA customer has submitted the following support ticket:\\n\\n\\\"Hi, I'm having trouble with your mobile app. Every time I try to upload a photo, the app crashes. I've tried restarting my phone (iPhone 12, iOS 16.1) and reinstalling the app, but the problem persists. I need to upload these photos for work and this is really frustrating. Can you help me fix this?\\\"\\n\\n## Response Instructions\\n1. Begin with a professional greeting and acknowledge the customer's frustration\\n2. Thank them for providing device and troubleshooting details\\n3. Provide a step-by-step troubleshooting process to resolve their photo upload issue\\n4. Include at least 3-4 specific, actionable solutions they haven't already tried\\n5. Explain the potential causes of the issue\\n6. Offer escalation options if the suggested solutions don't work\\n7. End with a professional closing that invites further communication if needed\\n\\nCraft a helpful, empathetic response that addresses the specific technical issue while maintaining a professional tone. Your response should be thorough yet concise, focusing on practical solutions.\\n\\nNow provide your response immediately without any preamble.\"",
+    "key_issues": [
+      "App crashing during photo upload",
+      "iPhone 12 with iOS 16.1",
+      "Work-related urgency",
+      "Already tried basic troubleshooting"
+    ],
+    "required_solutions": [
+      "Acknowledge the issue",
+      "Provide advanced troubleshooting steps",
+      "Offer alternative solutions",
+      "Escalate to technical team if needed"
+    ],
+    "policies": [
+      "Provide step-by-step instructions",
+      "Acknowledge customer effort in troubleshooting",
+      "Offer workarounds when possible"
+    ],
+    "_optimization_metadata": {
+      "original_length": 420,
+      "optimized_length": 1428,
+      "target_model": "amazon.nova-micro-v1:0"
+    }
+  },
+  "billing_dispute": {
+    "name": "Billing Dispute",
+    "prompt": "\"# Billing Support Representative Task\\n\\n## Scenario\\nYou are a professional billing support representative for a service company. A customer has contacted you with the following complaint:\\n\\n\\\"I just received my monthly bill and there's a charge for $89.99 that I don't recognize. It says 'Premium Service Upgrade' but I never signed up for any premium service. I've been on the basic plan for 2 years and haven't changed anything. This looks like an error or maybe someone accessed my account without permission. Please remove this charge immediately.\\\"\\n\\n## Instructions\\n1. Respond to this customer's billing concern in a professional, empathetic manner\\n2. Address their specific complaint about the unexpected $89.99 \\\"Premium Service Upgrade\\\" charge\\n3. Offer a clear explanation of the steps you will take to investigate and resolve this issue\\n4. Provide reassurance about account security if appropriate\\n5. Include any follow-up actions the customer should expect\\n\\nYour response should be:\\n- Professional and courteous\\n- Solution-oriented\\n- Clear about next steps\\n- Empathetic to the customer's frustration\\n- Concise and direct\\n\\nRespond immediately as the billing support representative addressing this customer's concern.\"",
+    "key_issues": [
+      "Unrecognized charge",
+      "Premium service upgrade not requested",
+      "Potential unauthorized access concern",
+      "Request for immediate removal"
+    ],
+    "required_solutions": [
+      "Investigate the charge",
+      "Review account activity",
+      "Address security concerns",
+      "Provide resolution timeline"
+    ],
+    "policies": [
+      "Verify customer identity",
+      "Investigate before making changes",
+      "Explain billing processes",
+      "Offer account security review"
+    ],
+    "_optimization_metadata": {
+      "original_length": 500,
+      "optimized_length": 1247,
+      "target_model": "amazon.nova-micro-v1:0"
+    }
+  },
+  "product_defect": {
+    "name": "Product Defect Report",
+    "prompt": "\"# Customer Support Agent Task\\n\\n## Scenario\\nYou are a professional product support representative for a premium audio company. You need to respond to a customer complaint about a defective product.\\n\\n## Customer Complaint\\n\\\"I bought your wireless headphones 2 months ago and the left earpiece has stopped working completely. There's no sound coming from it at all. The right side works fine. I've tried connecting to different devices and the problem persists. These headphones cost $200 and I expected them to last longer than 2 months. I'd like a replacement or refund. I still have the receipt and original packaging.\\\"\\n\\n## Instructions\\n1. Craft a professional, empathetic response that addresses the customer's frustration\\n2. Acknowledge the specific issue (left earpiece not working)\\n3. Validate the customer's expectation for quality given the premium price point\\n4. Provide a clear solution regarding replacement/refund options\\n5. Include any necessary next steps the customer should take\\n6. Maintain a helpful, solution-oriented tone throughout\\n7. Keep your response concise and direct\\n\\nProvide your customer service response immediately without any preamble or additional explanations.\"",
+    "key_issues": [
+      "Left earpiece not working",
+      "2-month-old product",
+      "High-value item ($200)",
+      "Customer has receipt and packaging"
+    ],
+    "required_solutions": [
+      "Acknowledge the defect",
+      "Offer replacement or refund",
+      "Explain warranty process",
+      "Provide return instructions"
+    ],
+    "policies": [
+      "Honor warranty terms",
+      "Make return process easy",
+      "Apologize for product quality issues",
+      "Offer expedited replacement when possible"
+    ],
+    "_optimization_metadata": {
+      "original_length": 530,
+      "optimized_length": 1211,
+      "target_model": "amazon.nova-micro-v1:0"
+    }
+  },
+  "account_security": {
+    "name": "Account Security Concern",
+    "prompt": "\"# Security Support Representative Role\\n\\nYou are an experienced security support representative tasked with handling urgent customer security incidents. Your goal is to provide clear, actionable guidance that addresses the customer's concerns while following security best practices.\\n\\n## Customer Incident Report\\nThe following is an urgent message from a customer experiencing a potential account breach:\\n\\n\\\"Help! I think someone has hacked my account. I just received an email saying my password was changed, but I didn't change it. I also see some purchases in my account history that I didn't make - two items totaling $150. I'm really worried about my personal information and credit card details. What should I do? Can you secure my account immediately?\\\"\\n\\n## Response Guidelines\\n1. Address the immediate security concerns\\n2. Provide step-by-step instructions for account recovery and protection\\n3. Explain how to dispute unauthorized charges\\n4. Outline preventative measures for future security\\n5. Maintain a calm, reassuring, yet professional tone\\n6. Include relevant timeframes for resolution where applicable\\n\\nRespond directly to the customer with a comprehensive security incident response plan. Your response should be structured, actionable, and prioritize the customer's security needs.\\n\\nProvide your response immediately without any preamble.\"",
+    "key_issues": [
+      "Unauthorized password change",
+      "Fraudulent purchases ($150)",
+      "Personal information at risk",
+      "Credit card security concern"
+    ],
+    "required_solutions": [
+      "Immediately secure the account",
+      "Investigate fraudulent activity",
+      "Reverse unauthorized charges",
+      "Provide security recommendations"
+    ],
+    "policies": [
+      "Act quickly on security issues",
+      "Verify customer identity thoroughly",
+      "Document all security incidents",
+      "Provide clear next steps"
+    ],
+    "_optimization_metadata": {
+      "original_length": 513,
+      "optimized_length": 1376,
+      "target_model": "amazon.nova-micro-v1:0"
+    }
+  }
+}

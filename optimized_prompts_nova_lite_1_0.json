@@ -1,0 +1,81 @@
+{
+  "angry_customer": {
+    "name": "Angry Customer Complaint",
+    "prompt": "\"# Customer Support Response Task\\n\\n## Scenario\\nYou are a professional customer support representative for a technology company. You need to respond to an upset customer who has written the following message:\\n\\n\\\"I am absolutely furious! I ordered a laptop 3 weeks ago and it still hasn't arrived. When I called last week, your representative was rude and unhelpful. I've been a loyal customer for 5 years and this is how you treat me? I want my money back immediately and I'm considering switching to your competitor. This is unacceptable!\\\"\\n\\n## Instructions\\nCraft a professional, empathetic response that:\\n1. Acknowledges the customer's frustration without being defensive\\n2. Addresses all specific concerns (delayed delivery, poor customer service, refund request)\\n3. Recognizes their loyalty as a 5-year customer\\n4. Offers a clear solution or next steps to resolve their issues\\n5. Aims to retain their business\\n6. Maintains a respectful, professional tone throughout\\n\\nYour response should demonstrate excellent customer service skills including active listening, problem-solving, and de-escalation techniques. Keep your response concise but thorough.\\n\\nNow provide your customer support response immediately without any preamble.\"",
+    "key_issues": [
+      "Delayed delivery",
+      "Poor customer service experience",
+      "Customer loyalty concerns",
+      "Refund request"
+    ],
+    "required_solutions": [
+      "Apologize sincerely",
+      "Investigate delivery status",
+      "Offer compensation",
+      "Escalate if needed"
+    ],
+    "policies": [
+      "Always acknowledge customer emotions",
+      "Provide specific next steps",
+      "Offer multiple resolution options"
+    ],
+    "_optimization_metadata": {
+      "original_length": 463,
+      "optimized_length": 1249,
+      "target_model": "amazon.nova-lite-v1:0"
+    }
+  },
+  "technical_issue": {
+    "name": "Software Technical Problem",
+    "prompt": "\"# Technical Support Representative Role\\n\\nYou are an experienced technical support representative for a mobile application company. Your goal is to provide helpful, professional, and solution-oriented responses to customer issues.\\n\\n## Customer Report\\nA customer has submitted the following support ticket:\\n\\n\\\"Hi, I'm having trouble with your mobile app. Every time I try to upload a photo, the app crashes. I've tried restarting my phone (iPhone 12, iOS 16.1) and reinstalling the app, but the problem persists. I need to upload these photos for work and this is really frustrating. Can you help me fix this?\\\"\\n\\n## Task Instructions\\nCraft a helpful technical support response that:\\n1. Acknowledges the customer's frustration\\n2. Demonstrates understanding of the specific issue (photo upload causing crashes)\\n3. Appreciates the troubleshooting steps they've already taken\\n4. Provides clear, step-by-step instructions for additional troubleshooting\\n5. Offers alternative solutions if available\\n6. Explains what might be causing the issue\\n7. Includes follow-up options if the suggested solutions don't work\\n\\n## Response Guidelines\\n- Use a professional but friendly tone\\n- Be concise but thorough\\n- Prioritize actionable solutions\\n- Include specific steps tailored to their device (iPhone 12, iOS 16.1)\\n- Avoid technical jargon unless necessary, and explain it when used\\n- End with an offer for further assistance\\n\\nProvide your response immediately without any preamble or additional information.\"",
+    "key_issues": [
+      "App crashing during photo upload",
+      "iPhone 12 with iOS 16.1",
+      "Work-related urgency",
+      "Already tried basic troubleshooting"
+    ],
+    "required_solutions": [
+      "Acknowledge the issue",
+      "Provide advanced troubleshooting steps",
+      "Offer alternative solutions",
+      "Escalate to technical team if needed"
+    ],
+    "policies": [
+      "Provide step-by-step instructions",
+      "Acknowledge customer effort in troubleshooting",
+      "Offer workarounds when possible"
+    ],
+    "_optimization_metadata": {
+      "original_length": 420,
+      "optimized_length": 1520,
+      "target_model": "amazon.nova-lite-v1:0"
+    }
+  },
+  "billing_dispute": {
+    "name": "Billing Dispute",
+    "prompt": "\"# Billing Support Representative Task\\n\\n## Scenario\\nYou are a professional billing support representative for a service company. A customer has contacted you with the following complaint:\\n\\n\\\"I just received my monthly bill and there's a charge for $89.99 that I don't recognize. It says 'Premium Service Upgrade' but I never signed up for any premium service. I've been on the basic plan for 2 years and haven't changed anything. This looks like an error or maybe someone accessed my account without permission. Please remove this charge immediately.\\\"\\n\\n## Instructions\\n1. Respond to this customer's billing concern in a professional, empathetic manner\\n2. Address their specific complaint about the unexpected $89.99 \\\"Premium Service Upgrade\\\" charge\\n3. Offer a clear explanation of the steps you will take to investigate and resolve this issue\\n4. Provide reassurance about account security if appropriate\\n5. Include any follow-up actions the customer should expect\\n\\n## Response Guidelines\\n- Begin with a professional greeting and acknowledgment of the issue\\n- Express empathy for the customer's frustration\\n- Explain the investigation process clearly\\n- Provide specific information about resolution timeframes\\n- End with a professional closing and offer for additional assistance\\n\\nProvide your response immediately without any preamble or additional information.\"",
+    "key_issues": [
+      "Unrecognized charge",
+      "Premium service upgrade not requested",
+      "Potential unauthorized access concern",
+      "Request for immediate removal"
+    ],
+    "required_solutions": [
+      "Investigate the charge",
+      "Review account activity",
+      "Address security concerns",
+      "Provide resolution timeline"
+    ],
+    "policies": [
+      "Verify customer identity",
+      "Investigate before making changes",
+      "Explain billing processes",
+      "Offer account security review"
+    ],
+    "_optimization_metadata": {
+      "original_length": 500,
+      "optimized_length": 1386,
+      "target_model": "amazon.nova-lite-v1:0"
+    }
+  }
+}
