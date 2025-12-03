@@ -303,6 +303,13 @@ The notebook includes diagnostic tools to identify and report blocked responses,
 - AWS credentials with access to Amazon Bedrock
 - Access to Nova models and GPT OSS 20B evaluator
 
+### Get Started
+
+```bash
+git clone git@github.com:aws-samples/sample-amazon-nova-reasoning-eval.git
+cd sample-amazon-nova-reasoning-eval 
+```
+
 ### Step 1: Generate Optimized Prompts (Optional but Recommended)
 
 The evaluation uses **AWS Bedrock Prompt Optimizer API** to create model-specific optimized prompts:
