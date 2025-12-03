@@ -155,7 +155,7 @@ Our evaluation ensures reliability through:
 
 **Structured Evaluation Prompts**: Clear criteria and scoring rubrics reduce evaluator bias and ensure consistent assessment across all responses.
 
-**Multiple Runs**: Each model-scenario combination is evaluated 5 times (125 total evaluations), allowing us to measure consistency and reduce random variation.
+**Multiple Runs**: Each model-scenario combination is evaluated 10 times (250 total evaluations), allowing us to measure consistency and reduce random variation.
 
 **Diverse Scenarios**: Five distinct customer support scenarios test different capabilities:
 - Angry Customer Complaint (emotional intelligence)
