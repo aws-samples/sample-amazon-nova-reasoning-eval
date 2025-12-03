@@ -338,7 +338,7 @@ jupyter notebook nova_lite_reasoning_evals.ipynb
 
 The notebook will:
 1. Load optimized prompts for each model
-2. Run 5 evaluations per model-scenario combination (125 total)
+2. Run 10 evaluations per model-scenario combination (250 total)
 3. Calculate scores, consistency metrics, and detect anomalies
 4. Generate visualizations and export results
 
