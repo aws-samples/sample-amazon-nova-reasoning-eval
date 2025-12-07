@@ -17,7 +17,7 @@ Using **GPT OSS 20B** as the evaluator model.
 ### Key Features
 
 - **Optimized Prompts**: Uses AWS Bedrock Prompt Optimizer API to generate model-specific optimized prompts for fair comparisons
-- **Consistency Metrics**: Novel consistency scoring (10 / (1 + std_dev)) quantifies response reliability beyond average performance
+- **Consistency Metrics**: CV-based consistency scoring (0-100 scale) quantifies response reliability beyond average performance using Coefficient of Variation
 - **Content Filtering Awareness**: Built-in guardrail detection identifies when models refuse responses due to safety filters
 - **Diagnostic Analysis**: Automated anomaly detection for evaluation failures and content blocking patterns
 
@@ -129,11 +129,11 @@ Traditional metrics cannot measure any of these dimensions effectively.
 
 | Model | Overall Score | Consistency Score | Pattern |
 |-------|---------------|-------------------|---------|
-| **Nova Lite 2.0** | 9.52/10 (±0.59) | 6.31/10 | Clear leader in both quality and reliability |
-| **Nova Lite 1.0** | 8.66/10 (±0.85) | 5.40/10 | Strong performer with good consistency |
-| **Nova Pro** | 8.36/10 (±0.74) | 5.74/10 | Solid performance with good consistency |
-| **Nova Micro** | 8.17/10 (±1.38) | 4.19/10 | Good quality but moderate variability |
-| **Nova Premier** | 7.36/10 (±2.56) | 2.81/10 | Impacted by content filtering and high variability |
+| **Nova Lite 2.0** | 9.42/10 (CV: 5.55%) | 94.45/100 | Clear leader in both quality and reliability |
+| **Nova Lite 1.0** | 8.65/10 (CV: 6.95%) | 93.05/100 | Strong performer with good consistency |
+| **Nova Pro** | 8.53/10 (CV: 9.54%) | 90.46/100 | Solid performance with good consistency |
+| **Nova Micro** | 7.70/10 (CV: 28.63%) | 71.37/100 | Good quality but moderate variability |
+| **Nova Premier** | 7.16/10 (CV: 37.04%) | 62.96/100 | Impacted by content filtering and high variability |
 
 This granularity—measuring both average performance and consistency across 8 dimensions—is challenging to realize with aggregate metrics like BLEU scores. The consistency scores reveal that Nova Pro and Premier, despite reasonable average scores, show high variability that could impact production reliability.
 
