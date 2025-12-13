@@ -13,6 +13,7 @@ This evaluation compares five Amazon Nova models across complex customer support
 - **Amazon Nova Premier** (`us.amazon.nova-premier-v1:0`)
 
 **Note**: If you see errors during model invocation, try `us.<model id>` or `global.<model id>`
+**Note**: Both Nova 2 Lite and Nova Lite 2.0 refer to the same model here and in the notebook.
 
 Using **GPT OSS 20B** as the evaluator model.
 
