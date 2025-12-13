@@ -1,4 +1,4 @@
-# Amazon Nova Lite 2.0 Reasoning Evaluation
+# Amazon Nova 2 Lite Reasoning Evaluation
 
 A comprehensive evaluation of Amazon Nova model family's reasoning capabilities using LLM-as-a-Judge methodology with GPT OSS 20B as the evaluator. You can configure the setup to use evaluator LLM of your choice. 
 
@@ -12,6 +12,8 @@ This evaluation compares five Amazon Nova models across complex customer support
 - **Amazon Nova Pro v1.0** (`amazon.nova-pro-v1:0`)
 - **Amazon Nova Premier** (`us.amazon.nova-premier-v1:0`)
 
+**Note**: If you see errors during model invocation, try `us.<model id>` or `global.<model id>`
+
 Using **GPT OSS 20B** as the evaluator model.
 
 ### Key Features
@@ -22,6 +24,8 @@ Using **GPT OSS 20B** as the evaluator model.
 - **Diagnostic Analysis**: Automated anomaly detection for evaluation failures and content blocking patterns
 
 ## Evaluation Results
+
+**Note**: This evaluation tests the models' ability to use inference and analytical thinking for customer support scenarios, not the extended reasoning capabilities. If you are interested in evaluating the extended reasoning capability, please refer to https://docs.aws.amazon.com/nova/latest/userguide/extended-thinking.html 
 
 ### Overall Performance Rankings
 
