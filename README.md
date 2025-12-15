@@ -38,17 +38,17 @@ Using **GPT OSS 20B** as the evaluator model.
 
 | Rank | Model | Overall Score | SE | 95% CI | Consistency (CV-based) | CV% |
 |------|-------|---------------|----|---------|-----------------------|-----|
-| 1 | **Nova Lite 2.0** | 9.42/10 | 0.08 | [9.28, 9.57] | 94.45/100 | 5.55% |
+| 1 | **Nova 2 Lite** | 9.42/10 | 0.08 | [9.28, 9.57] | 94.45/100 | 5.55% |
 | 2 | **Nova Lite 1.0** | 8.65/10 | 0.09 | [8.48, 8.82] | 93.05/100 | 6.95% |
 | 3 | **Nova Pro** | 8.53/10 | 0.12 | [8.30, 8.76] | 90.46/100 | 9.54% |
 | 4 | **Nova Micro** | 7.70/10 | 0.32 | [7.08, 8.32] | 71.37/100 | 28.63% |
 | 5 | **Nova Premier** | 7.16/10 | 0.38 | [6.41, 7.91] | 62.96/100 | 37.04% |
 
 **Key Insights:**
-- **Nova Lite 2.0** leads with highest overall score (9.42/10) AND highest consistency (94.45/100)
-- **Statistical significance**: Nova Lite 2.0's 95% CI [9.28, 9.57] does not overlap with other models, confirming superior performance
+- **Nova 2 Lite** leads with highest overall score (9.42/10) AND highest consistency (94.45/100)
+- **Statistical significance**: The 95% CI [9.28, 9.57] of Nova 2 Lite does not overlap with other models, confirming superior performance
 - **Nova Premier** has lowest consistency (62.96/100) and highest coefficient of variation (37.04%) due to content filtering
-- **Precision matters**: Nova Lite 2.0's low standard error (0.08) indicates highly reliable estimates
+- **Precision matters**: The low standard error (0.08) of Nova 2 Lite indicates highly reliable estimates
 - **Sample size**: n=49 successful evaluations per model (98% success rate overall)
 
 ### Detailed Performance Breakdown
@@ -57,7 +57,7 @@ Using **GPT OSS 20B** as the evaluator model.
 
 #### Table 1: Overall Model Performance Summary
 
-| Metric | Nova Lite 2.0 | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
+| Metric | Nova 2 Lite | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
 |--------|---------------|---------------|----------|------------|--------------|
 | **Overall Score** | 9.42 | 8.65 | 8.53 | 7.70 | 7.16 |
 | **Standard Error (SE)** | 0.08 | 0.09 | 0.12 | 0.32 | 0.38 |
@@ -69,7 +69,7 @@ Using **GPT OSS 20B** as the evaluator model.
 
 #### Table 2: Dimension-Level Performance (Mean Scores ± 95% CI)
 
-| Dimension | Nova Lite 2.0 | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
+| Dimension | Nova 2 Lite | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
 |-----------|---------------|---------------|----------|------------|--------------|
 | **Problem Identification** | 9.63 ± 0.27 | 8.57 ± 0.46 | 8.16 ± 0.44 | 7.59 ± 0.74 | 6.94 ± 0.82 |
 | **Solution Completeness** | 9.59 ± 0.23 | 8.08 ± 0.32 | 8.04 ± 0.42 | 6.78 ± 0.65 | 6.33 ± 0.69 |
@@ -82,7 +82,7 @@ Using **GPT OSS 20B** as the evaluator model.
 
 #### Table 3: Scenario-Level Performance (Mean Scores)
 
-| Scenario | Nova Lite 2.0 | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
+| Scenario | Nova 2 Lite | Nova Lite 1.0 | Nova Pro | Nova Micro | Nova Premier |
 |----------|---------------|---------------|----------|------------|--------------|
 | **Account Security Concern** | 9.25 | 7.95 | 7.65 | 6.90 | 2.00 |
 | **Angry Customer Complaint** | 9.95 | 9.50 | 9.30 | 8.35 | 8.20 |
@@ -90,10 +90,10 @@ Using **GPT OSS 20B** as the evaluator model.
 | **Product Defect Report** | 9.25 | 8.90 | 7.70 | 8.00 | 8.75 |
 | **Software Technical Problem** | 10.00 | 8.20 | 8.55 | 8.75 | 8.60 |
 
-#### Nova Lite 2.0 (Winner)
+#### Nova 2 Lite (Winner)
 **Overall Score**: 9.42/10 (SE: 0.08, 95% CI: [9.28, 9.57]) | **Consistency Score**: 94.45/100 (Good)
 
-**Key Strengths**: Nova Lite 2.0 demonstrates exceptional performance across all dimensions with remarkably low coefficient of variation (5.55%), indicating consistent high-quality responses. It excels particularly in communication clarity (9.76 ± 0.19), logical coherence (9.71 ± 0.35), and problem identification (9.63 ± 0.27). Its high consistency score (94.45/100) and narrow confidence intervals make it ideal for production deployments where reliability is critical.
+**Key Strengths**: Nova 2 Lite demonstrates exceptional performance across all dimensions with remarkably low coefficient of variation (5.55%), indicating consistent high-quality responses. It excels particularly in communication clarity (9.76 ± 0.19), logical coherence (9.71 ± 0.35), and problem identification (9.63 ± 0.27). Its high consistency score (94.45/100) and narrow confidence intervals make it ideal for production deployments where reliability is critical.
 
 ## Why LLM-as-a-Judge is the Most Reliable Evaluation Method
 
@@ -128,13 +128,13 @@ Traditional metrics cannot measure any of these dimensions effectively.
 
 #### 2. Evidence of Reliability
 
-**Consistency Across Scenarios**: Our evaluation shows that Nova Lite 2.0's low variance (±0.39) across diverse scenarios demonstrates the evaluator's ability to consistently identify quality. If the evaluation were unreliable, we would see random score distributions rather than clear performance patterns.
+**Consistency Across Scenarios**: Our evaluation shows that the low variance (±0.39) of Nova 2 Lite across diverse scenarios demonstrates the evaluator's ability to consistently identify quality. If the evaluation were unreliable, we would see random score distributions rather than clear performance patterns.
 
 **Discriminative Power**: The evaluation successfully differentiates between models with both quality and consistency metrics:
 
 | Model | Overall Score | Consistency Score | Pattern |
 |-------|---------------|-------------------|---------|
-| **Nova Lite 2.0** | 9.42/10 (CV: 5.55%) | 94.45/100 | Clear leader in both quality and reliability |
+| **Nova 2 Lite** | 9.42/10 (CV: 5.55%) | 94.45/100 | Clear leader in both quality and reliability |
 | **Nova Lite 1.0** | 8.65/10 (CV: 6.95%) | 93.05/100 | Strong performer with good consistency |
 | **Nova Pro** | 8.53/10 (CV: 9.54%) | 90.46/100 | Solid performance with good consistency |
 | **Nova Micro** | 7.70/10 (CV: 28.63%) | 71.37/100 | Good quality but moderate variability |
@@ -183,18 +183,18 @@ Our evaluation ensures reliability through:
 
 ## Key Findings
 
-1. **Nova Lite 2.0 is the Clear Winner**: With a 9.42/10 score (95% CI: [9.28, 9.57]) and exceptional consistency (94.45/100, CV: 5.55%), Nova Lite 2.0 outperforms all other models across both quality and reliability metrics. The non-overlapping confidence intervals confirm statistically significant superiority.
+1. **Nova 2 Lite is the Clear Winner**: With a 9.42/10 score (95% CI: [9.28, 9.57]) and exceptional consistency (94.45/100, CV: 5.55%), Nova Lite 2.0 outperforms all other models across both quality and reliability metrics. The non-overlapping confidence intervals confirm statistically significant superiority.
 
-2. **Consistency Matters as Much as Quality**: Nova Lite 2.0's low coefficient of variation (5.55%) indicates reliable performance across diverse scenarios. In contrast, Nova Premier has much lower consistency (62.96/100) and high CV (37.04%), making it less predictable for production use. The CV-based consistency metric provides an intuitive 0-100 scale for reliability assessment.
+2. **Consistency Matters as Much as Quality**: The low coefficient of variation (5.55%) of Nova 2 Lite indicates reliable performance across diverse scenarios. In contrast, Nova Premier has much lower consistency (62.96/100) and high CV (37.04%), making it less predictable for production use. The CV-based consistency metric provides an intuitive 0-100 scale for reliability assessment.
 
 3. **Statistical Significance Confirmed**: The 95% confidence intervals demonstrate clear performance separation:
-   - Nova Lite 2.0: [9.28, 9.57] - No overlap with any other model
+   - Nova 2 Lite: [9.28, 9.57] - No overlap with any other model
    - Nova Lite 1.0: [8.48, 8.82] - Significantly better than Micro and Premier
    - Nova Pro: [8.30, 8.76] - Significantly better than Micro and Premier
    - Nova Micro: [7.08, 8.32] - Wide CI indicates high variability
    - Nova Premier: [6.41, 7.91] - Widest CI reflects content filtering impact
 
-4. **Model Size ≠ Performance**: Nova Lite 2.0 outperforms the larger Nova Pro (8.53/10) and flagship Nova Premier (7.16/10), demonstrating that architectural improvements and training methodology matter more than raw parameter count.
+4. **Model Size ≠ Performance**: Nova 2 Lite outperforms the larger Nova Pro (8.53/10) and flagship Nova Premier (7.16/10), demonstrating that architectural improvements and training methodology matter more than raw parameter count.
 
 5. **Content Filtering Impact**: Nova Premier's lower scores and highest CV (37.04%) are partially due to content filtering, not poor reasoning. This reflects conservative guardrails designed for enterprise compliance.
 
@@ -264,7 +264,7 @@ This evaluation employs rigorous statistical methods following best practices ou
 
 **Statistical Interpretation:**
 - **Coefficient of Variation (CV)**: Measures relative variability; lower CV% indicates more consistent performance
-  - CV < 10%: Good consistency (Nova Lite 2.0: 5.55%, Nova Lite 1.0: 6.95%, Nova Pro: 9.54%)
+  - CV < 10%: Good consistency (Nova 2 Lite: 5.55%, Nova Lite 1.0: 6.95%, Nova Pro: 9.54%)
   - CV > 20%: Poor consistency (Nova Micro: 28.63%, Nova Premier: 37.04%)
 - **Non-overlapping CIs**: Indicate statistically significant differences between models
 - **Standard Error**: Quantifies precision of estimates; smaller SE means more reliable scores
@@ -282,9 +282,9 @@ This evaluation employs rigorous statistical methods following best practices ou
 - The evaluator is asked to provide justification for the score provided along each dimension
 - The evaluator is also asked to provide an overall score and justification
 
-**Sample explanations provided by the evaluator for Nova Lite 2.0 and Nova Micro for the Product Defect Report scenario along the Problem Identification dimension**
+**Sample explanations provided by the evaluator for Nova 2 Lite and Nova Micro for the Product Defect Report scenario along the Problem Identification dimension**
 
-**Nova Lite 2.0 – Score: 9**
+**Nova 2 Lite – Score: 9**
 The response clearly identifies all key issues: a three‚ week delayed delivery, a rude and unhelpful customer service interaction, the customer’s loyalty of five years, and the request for a refund. It directly quotes the customer’s concerns and acknowledges each one.
 
 **Nova Micro – Score: 5**
@@ -356,7 +356,7 @@ The notebook will:
 
 ### Optimized Prompts (Generated by prompt_optimizer.py)
 - `optimized_prompts_amazon_nova-lite-v1_0.json` - Nova Lite 1.0 optimized prompts
-- `optimized_prompts_amazon_nova-2-lite-v1_0.json` - Nova Lite 2.0 optimized prompts
+- `optimized_prompts_amazon_nova-2-lite-v1_0.json` - Nova 2 Lite optimized prompts
 - `optimized_prompts_amazon_nova-micro-v1_0.json` - Nova Micro optimized prompts
 - `optimized_prompts_amazon_nova-pro-v1_0.json` - Nova Pro optimized prompts
 - `optimized_prompts_amazon_nova-premier-v1_0.json` - Nova Premier optimized prompts
@@ -372,12 +372,12 @@ The notebook will:
 
 ## Conclusion
 
-This evaluation demonstrates that **Amazon Nova Lite 2.0** represents a significant advancement in reasoning capabilities, achieving the highest scores across all evaluation dimensions with exceptional consistency (94.45/100 consistency score, CV: 5.55%). The combination of high quality (9.42/10, 95% CI: [9.28, 9.57]) and low variability makes it the most reliable choice for production deployments.
+This evaluation demonstrates that **Amazon Nova 2 Lite** represents a significant advancement in reasoning capabilities, achieving the highest scores across all evaluation dimensions with exceptional consistency (94.45/100 consistency score, CV: 5.55%). The combination of high quality (9.42/10, 95% CI: [9.28, 9.57]) and low variability makes it the most reliable choice for production deployments.
 
-The rigorous statistical methodology, following "Adding Error Bars to Evals" (Miller, 2024, Anthropic), provides quantified uncertainty through standard errors, confidence intervals, and paired differences analysis. The non-overlapping confidence intervals between Nova Lite 2.0 and all other models confirm statistically significant performance superiority, not just numerical differences.
+The rigorous statistical methodology, following "Adding Error Bars to Evals" (Miller, 2024, Anthropic), provides quantified uncertainty through standard errors, confidence intervals, and paired differences analysis. The non-overlapping confidence intervals between Nova 2 Lite and all other models confirm statistically significant performance superiority, not just numerical differences.
 
 The LLM-as-a-Judge methodology provides reliable, comprehensive assessment that traditional metrics cannot match, offering insights into model performance that directly correlate with real-world utility. The addition of CV-based consistency scoring (0-100 scale), power analysis, and diagnostic tools ensures that model selection considers both average performance and reliability—critical factors for production AI systems.
 
-**Recommendation**: For customer support and similar reasoning-intensive applications, Nova Lite 2.0 offers the best balance of quality, consistency, and cost-effectiveness among the Nova model family. Its narrow confidence intervals (±0.15 margin of error) and high consistency score (94.45/100) provide confidence in reliable production performance.
+**Recommendation**: For customer support and similar reasoning-intensive applications, Nova 2 Lite offers the best balance of quality, consistency, and cost-effectiveness among the Nova model family. Its narrow confidence intervals (±0.15 margin of error) and high consistency score (94.45/100) provide confidence in reliable production performance.
 
 **Statistical Note**: All results include 95% confidence intervals and consistency metrics. The ± values in dimension scores represent the margin of error (half the width of the 95% CI), enabling transparent assessment of estimate precision and statistical significance.
